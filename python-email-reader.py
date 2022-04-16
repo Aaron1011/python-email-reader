@@ -75,7 +75,7 @@ def main():
 
                 payload = part.get_payload()
                 if not payload in read:
-                    print "New message"
+                    print ("New message")
                     read.add(payload)
                     msg = PARSER.parsestr(data[0][1])
                     TTS.say("New message from " + msg['From'])
